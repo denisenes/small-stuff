@@ -1,0 +1,18 @@
+Program. Prog ::= "$pragmas" PrsList "$instructions" InstrList;
+
+PLNone. PrsList ::= ;
+PLElem. PrsList ::= Pragma ";" PrsList;
+
+Alloc. Pragma ::= "@alloc" S;
+Set. Pragma ::= "@set" R "," V;
+
+ILNone. InstrList ::= ;
+ILElem. InstrList ::= Instr ";" InstrList;
+
+Inc. Instr ::= "INC" R;
+Dec. Instr ::= "DEC" R "," A;
+
+Reg. R ::= Integer;
+Addr. A ::= Integer;
+Size. S ::= Integer;
+Value. V ::= Integer; 

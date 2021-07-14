@@ -1,0 +1,12 @@
+$pragmas
+@alloc 100;
+@set 1, 5;
+@set 2, 7;
+
+$instructions
+INC 0;
+DEC 2, 0;
+INC 0;
+DEC 1, 2;
+DEC 0, 5;
+DEC 0, 6;
